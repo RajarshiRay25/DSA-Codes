@@ -28,16 +28,17 @@ void show(struct myArr* a){
 }
 
 void setVal(struct myArr* a){
-    int num;
-    for(int i=0;i< a-> usedSize;i++){
+    int num;    // number to input in array
+    for(int i=0;i< a-> usedSize;i++){       // run from 0 to size to be used
         printf("Enter Element : %d \n",i+1);
         scanf("%d",&num);
-        (a->ptr)[i]=num;
+        (a->ptr)[i]=num;    // assign value to DMA array
     }
 }
 int main(){
     struct myArr info;
-    makeArr(&info,10,3);
+    makeArr(&info,10,3);            // &info depicts that the address of the structure is pass into function pointers
+    
     printf("Setting Values : \n");
     setVal(&info);
     printf("Showing Values : \n");
