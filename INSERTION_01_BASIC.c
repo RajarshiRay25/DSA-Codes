@@ -28,7 +28,7 @@ int main(){
     printf("BEFORE INSERTION. \n");
     display(arr,size);
     insertElem(arr,elem,size,capacity,index);
-    size++;   // new elem added -> size of array increase
+    size++;   // new elem added -> size of array increase to display
     printf("AFTER INSERTION. \n");
     display(arr,size);
     return 0;
